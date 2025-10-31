@@ -5,13 +5,12 @@ class Kompyuter:
         self.disk_hajmi = disk_hajmi
 
     def malumot(self):
-        """Kompyuter ma'lumotlarini qaytaradi"""
         return f"Model: {self.model}, RAM: {self.ram} GB, Disk hajmi: {self.disk_hajmi} GB"
 
     def ram_yangila(self, yangi_ram):
-        """RAMni yangilaydi"""
         self.ram = yangi_ram
         print(f"RAM yangilandi: {self.ram} GB")
+
 
 komp1 = Kompyuter("Dell Inspiron", 8, 512)
 print(komp1.malumot())
